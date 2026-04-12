@@ -65,15 +65,18 @@ header {
 }
 
 .nav-logo {
-    height: 65px; 
+    height: 130px; /* Tamaño grande deseado */
     width: auto;
     display: block;
+    margin-top: -35px;    /* Valor corregido para absorber 15px extra hacia arriba */
+    margin-bottom: -35px; /* Valor corregido para absorber 15px extra hacia abajo */
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
 }
 
+/* --- ANIMACIÓN LOGO AL HOVER: Escala proporcional --- */
 .nav-logo:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.6)); /* Brillo morado al hover */
+    transform: scale(1.08); /* Crecimiento suave proporcional */
+    filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.6)); /* Brillo morado */
 }
 
 /* --- NAVEGACIÓN --- */
